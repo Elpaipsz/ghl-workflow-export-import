@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "GHL Workflow Import/Export",
+  "version": "0.2.0",
+  "description": "Exporta e importa Workflows de GoHighLevel entre sub-cuentas usando tu propia sesión del navegador. Funciona en cualquier dominio whitelabel: haz clic en el ícono para activarla en la pestaña actual.",
+  "permissions": ["activeTab", "scripting", "downloads"],
+  "host_permissions": [
+    "https://*.leadconnectorhq.com/*",
+    "https://*.msgsndr.com/*",
+    "https://firebasestorage.googleapis.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "GHL Workflow Import/Export — clic para activar en esta pestaña"
+  }
+}
